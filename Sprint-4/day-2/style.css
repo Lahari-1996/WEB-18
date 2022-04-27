@@ -1,0 +1,49 @@
+#nav{
+    width: 95%;
+    height:70px;
+    margin: auto;
+    background-color: aquamarine;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    font-size: 35px;
+    font-family: sans-serif;
+    color: brown;
+    text-decoration: none;
+   margin-top: 15px;
+}
+#form{
+    width: 95%;
+    margin: auto;
+   display: flex;
+   justify-content: space-evenly;
+}
+#container{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap:20px;
+}
+#cards{
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+img{
+    width: 100%;
+}
+p+img{
+    width: 150px;
+    margin-top: -20px;
+}
+h3{
+    font-size: 25px;
+    margin-top: 5px;
+}
+p{
+    font-size:20px ;
+    margin-top: -20px;
+}

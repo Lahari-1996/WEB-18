@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <a href="frontend.html">Frontend</a>
+        <a href="backend.html">Backend</a>
+    </div>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+    var datas=JSON.parse(localStorage.getItem("info"))
+    datas.forEach(function(elem){
+    var div2=document.createElement("div");
+    div2.setAttribute("id","cards");
+    var image = document.createElement("img");
+    image.setAttribute("src", elem.investorImg)
+    var name = document.createElement("h3");
+    name.innerText=elem.investorName;
+    var position = document.createElement("p");
+    position.innerText=elem.investorRole;
+    var logo = document.createElement("img");
+    logo.setAttribute("src", elem.investorLogo);
+    div2.append(image,name,position,logo);
+    document.querySelector("#container").append(div2)
+})
+</script>
